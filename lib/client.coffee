@@ -38,7 +38,6 @@ module.exports = (apiKey, accessTocken) ->
 
     event
 
-
   createEvent = (data, cb) ->
     event = _getEventData data
 
