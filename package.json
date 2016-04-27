@@ -1,0 +1,31 @@
+{
+  "name": "dm-constantcontact",
+  "version": "0.0.1",
+  "description": "Decisionmapper constant contact library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "./node_modules/.bin/coffee --compile .",
+    "postpublish": "find . -name '*.coffee' -type f | grep -v 'node_modules' | sed -e 's/\\.coffee/\\.js/g' | xargs /bin/rm -f"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmapper/dm-constantcontact.git"
+  },
+  "keywords": [
+    "constact",
+    "contact",
+    "dm",
+    "decisionmapper"
+  ],
+  "author": "Eugene Orekhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmapper/dm-constantcontact/issues"
+  },
+  "homepage": "https://github.com/dmapper/dm-constantcontact#readme",
+  "dependencies": {
+    "moment": "^2.9.0",
+    "constantcontact": "git://github.com/dmapper/node-constantcontact"
+  }
+}
