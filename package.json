@@ -1,6 +1,6 @@
 {
   "name": "dm-constantcontact",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Decisionmapper constant contact library",
   "main": "index.js",
   "scripts": {
