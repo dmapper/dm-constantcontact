@@ -1,12 +1,12 @@
 CCClient = require 'constantcontact'
 moment = require 'moment'
 
-module.exports = (apiKey, accessTocken) ->
+module.exports = (apiKey, accessToken) ->
 
   getCCClient = ->
     client = new CCClient()
     client.useKey apiKey
-    client.useToken accessTocken
+    client.useToken accessToken
     client
 
   _getEventData = (data) ->
